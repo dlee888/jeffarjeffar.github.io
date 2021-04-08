@@ -3,9 +3,13 @@ html {
 	color:antiquewhite;
 }
 
-div.head {
+div.header {
+	width: 100%;
 	position: fixed;
 	font-size: large;
+	margin: 5px 5px 5px 5px;
 	text-align: center;
 	border-width: 5px;
+	border-color: aliceblue;
+	border-style: solid;
 }
