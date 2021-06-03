@@ -4,12 +4,39 @@ html {
 }
 
 div.header {
-	width: 100%;
+	width: 98%;
 	position: fixed;
 	font-size: large;
-	margin: 5px 5px 5px 5px;
+	margin-top: 3px;
+	margin-bottom: 5px;
+	margin-left: 3px;
+	margin-right: 10px !important;
 	text-align: center;
 	border-width: 5px;
 	border-color: aliceblue;
 	border-style: solid;
+}
+
+div.navigation {
+	position: fixed;
+	top: 115px;
+	width: 98%;
+	border-bottom: 7px;
+	border-top: 4px;
+	border-left: 1px;
+	border-right: 1px;
+	border-color: #eee;
+	border-style: solid;
+	margin-top: 3px;
+	margin-bottom: 5px;
+	margin-left: 3px;
+	margin-right: 10px !important;
+}
+
+a.navigation-box {
+	text-align: center;
+}
+
+a.navigation-link {
+	font-size: 16pt;
 }
