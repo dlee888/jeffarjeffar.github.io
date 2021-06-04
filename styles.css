@@ -33,10 +33,41 @@ div.navigation {
 	margin-right: 10px !important;
 }
 
-a.navigation-box {
+div.navigation-box {
 	text-align: center;
+	width: 49%;
 }
 
 a.navigation-link {
 	font-size: 16pt;
+}
+
+a.navigation-link:link {
+	color: aliceblue;
+}
+
+a.navigation-link:visited {
+	color: beige;
+}
+
+a.navigation-link:hover {
+	color: #fff;
+	background-color: darkslategray;
+}
+
+div.content {
+	position: relative;
+	top: 160px;
+}
+
+div.problem {
+	margin: 20px 20px 20px 20px;
+	background-color: lightgray;
+	color: black;
+	border-style: solid;
+	border-color: burlywood;
+	border-radius: 7px;
+	border-width: 5px;
+	padding: 10px;
+	padding-left: 10px;
 }
