@@ -19,12 +19,10 @@ div.header {
 
 div.navigation {
 	position: fixed;
-	top: 115px;
 	width: 98%;
+	top: 135px;
 	border-bottom: 7px;
 	border-top: 4px;
-	border-left: 1px;
-	border-right: 1px;
 	border-color: #eee;
 	border-style: solid;
 	margin-top: 3px;
@@ -33,13 +31,29 @@ div.navigation {
 	margin-right: 10px !important;
 }
 
-div.navigation-box {
-	text-align: center;
-	width: 49%;
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li.navigation-box {
+	float: left;
+	border-style: solid;
+	margin-right: 3px;
+	border-left: 0px;
+	border-top: 0px;
+	border-bottom: 0px;
+	border-color: rgb(4, 0, 253);
 }
 
 a.navigation-link {
-	font-size: 16pt;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
 a.navigation-link:link {
@@ -57,7 +71,8 @@ a.navigation-link:hover {
 
 div.content {
 	position: relative;
-	top: 160px;
+	top: 190px;
+	margin-top: 10px;
 }
 
 div.problem {
@@ -70,4 +85,9 @@ div.problem {
 	border-width: 5px;
 	padding: 10px;
 	padding-left: 10px;
+}
+
+div.problem::before {
+	content: "Problem:";
+	font-style: italic;
 }
