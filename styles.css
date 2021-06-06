@@ -91,3 +91,34 @@ div.problem::before {
 	content: "Problem:";
 	font-style: italic;
 }
+
+div.solution {
+	margin: 20px 20px 20px 20px;
+	background-color: lightgray;
+	color: black;
+	border-style: solid;
+	border-color: burlywood;
+	border-radius: 7px;
+	border-width: 5px;
+	padding: 10px;
+	padding-left: 10px;
+	display: none;
+}
+
+div.solution::before {
+	content: "Solution:";
+	font-style: italic;
+}
+
+button.hide-button {
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+	border: 5px;
+	border-color: chocolate;
+	background-color: bisque;
+	border-style: outset;
+	border-radius: 7px;
+	margin: 20px 20px 20px 20px;
+	padding: 5px;
+}

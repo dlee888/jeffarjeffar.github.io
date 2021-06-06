@@ -8,6 +8,24 @@
 	<body>
 		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<script>
+			window.MathJax = {
+				tex: {
+					inlineMath: [['$', '$'], ['\\(', '\\)']]
+				}
+			};
+		</script>
+
+		<script>
+			function myFunction(id) {
+				var x = document.getElementById(id);
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+		</script>
 
 		<div class="header">
 			<h1>Use the Apple Method!</h1>
@@ -29,6 +47,17 @@
 				<p>
 					Evaluate:
 					$$\sqrt{6+\sqrt{6+\sqrt{6+\ldots}}}$$
+				</p>
+			</div>
+			<button onclick="myFunction('solution1')" class="hide-button">Hide/Show Solution</button>
+			<div class="solution" id="solution1">
+				<p>
+					We can solve this by using the apple method. Let $(^{^(})=\sqrt{6+\sqrt{6+\sqrt{6+\ldots}}}$.
+					Notice that $(^{^(})$ actually appears inside itself: $(^{^(})=\sqrt{6+(^{^(})}$
+					Now, we can solve this by squaring both sides and factoring:
+					$$(^{^(})^2=6+(^{^(})$$
+					$$\left((^{^(})+2\right)\left((^{^(})-3\right)=0$$
+					Since square roots are always positive, we get that $(^{^(})=3$.
 				</p>
 			</div>
 		</div>
