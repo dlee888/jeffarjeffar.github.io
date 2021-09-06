@@ -6,6 +6,16 @@
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<script>
+			window.MathJax = {
+				tex: {
+					inlineMath: [['$', '$'], ['\\(', '\\)']]
+				}
+			};
+		</script>
+
 		<div class="header">
 			<h1>Use the Apple Method!</h1>
 		</div>
@@ -14,6 +24,45 @@
 				<li class="navigation-box"><a href="index.html" class="navigation-link">Home</a></li>
 				<li class="navigation-box"><a href="applemethod.html" class="navigation-link">The Apple Method</a></li>
 			</ul>
+		</div>
+		<div class="content">
+			<h1>What is the Apple Method?</h1>
+
+			<p>
+				The Apple Method is a method for solving algebra problems. An apple is used to make a clever algebraic substitution.
+				<br>
+				Dr. Ali Gurel from Alphastar academy started a new series of cool videos; the apple method's corresponding video can be found at https://www.youtube.com/watch?v=rz86M2hlOGk
+			</p>
+
+			<h1>Why Apple?</h1>
+			<p>
+				A few reasons:
+				<ol>
+					<li>1. When you use the Apple Method, you can box what you are substituting with the apple. When you use $x$ as a substitution, instead of actually boxing it, you are just crossing it out.</li>
+					
+					<li>2. Apples are easier to draw.</li>
+					
+					<li>3. Apples are good for you.</li>
+					
+					<li>4. An Apple a Day Keeps the Doctor Away.</li>
+				</ol>
+			</p>
+
+			<h1>LaTeX code for apple</h1>
+			$\$ $(^{^(})$\$ $, or if you want some color, $\$ $\textcolor{red}{(\textcolor{green}{^{^(}})}$\$ $.
+			
+			<h1>Examples</h1>
+			1. Evaluate:\[\sqrt{6+\sqrt{6+\sqrt{6+\cdots}}}\]
+			<br>
+			<em>Solution:</em>
+			<br>
+			If we set $\textcolor{red}{(\textcolor{green}{^{^(}})}=\sqrt{6+\sqrt{6+\sqrt{6+\cdots}}}$, we can see that $\textcolor{red}{(\textcolor{green}{^{^(}})}^2= 6+\textcolor{red}{(\textcolor{green}{^{^(}})}$.
+			<br>
+			Solving, we get $\textcolor{red}{(\textcolor{green}{^{^(}})}=\boxed{3}$
+			
+			<h1>Extensions</h1>
+			<h3>The Pear Method</h3>
+			When more than one variable is needed, pears, bananas, and smiley faces are usually used.
 		</div>
 	</body>
 </html>
