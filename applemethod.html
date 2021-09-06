@@ -17,7 +17,7 @@
 		</script>
 
 		<script>
-			function myFunction(id) {
+			function toggle(id) {
 				var x = document.getElementById(id);
 				if (x.style.display === "none") {
 					x.style.display = "block";
@@ -49,7 +49,7 @@
 					$$\sqrt{6+\sqrt{6+\sqrt{6+\ldots}}}$$
 				</p>
 			</div>
-			<button onclick="myFunction('solution1')" class="hide-button">Hide/Show Solution</button>
+			<button onclick="toggle('solution1')" class="hide-button">Hide/Show Solution</button>
 			<div class="solution" id="solution1">
 				<p>
 					We can solve this by using the apple method. Let $(^{^(})=\sqrt{6+\sqrt{6+\sqrt{6+\ldots}}}$.
@@ -67,7 +67,7 @@
 					If $\log_{24\sin x}(24\cos x)=\frac32$, calculate $\cot^2x$
 				</p>
 			</div>
-			<button onclick="myFunction('solution2')" class="hide-button">Hide/Show Solution</button>
+			<button onclick="toggle('solution2')" class="hide-button">Hide/Show Solution</button>
 			<div class="solution" id="solution2">
 				<p>
 					Use change of base to get $$\log_{24\sin x}(24\cos x) = \frac{\log (24\cos x)}{\log (24\sin x)} = \frac{\log(24)+\log(\cos x)}{\log(24)+\log(\sin x)} = \frac 32.$$
@@ -82,15 +82,60 @@
 					$$\frac{\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+\frac{1}{4^2}+\ldots}{\frac{1}{1^2}+\frac{1}{3^2}+\frac{1}{5^2}+\frac{1}{7^2}+\ldots}$$
 				</p>
 			</div>
-			<button onclick="myFunction('solution3')" class="hide-button">Hide/Show Solution</button>
+			<button onclick="toggle('solution3')" class="hide-button">Hide/Show Solution</button>
 			<div class="solution" id="solution3">
 				<p>
 					Let
 					$$\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+\frac{1}{4^2}+\ldots=(^{^(})$$
 					Notice that:
-					$$\frac{1}{1^2}+\frac{1}{3^2}+\frac{1}{5^2}+\frac{1}{7^2}+\ldots}=\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+\frac{1}{4^2}+\ldots-\frac{1}{2^2}+\frac{1}{4^2}+\frac{1}{6^2}+\frac{1}{8^2}+\ldots$$
+					$$\frac{1}{1^2}+\frac{1}{3^2}+\frac{1}{5^2}+\frac{1}{7^2}+\ldots=\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+\frac{1}{4^2}+\ldots-\frac{1}{2^2}+\frac{1}{4^2}+\frac{1}{6^2}+\frac{1}{8^2}+\ldots$$
 					$$=(^{^(})-\frac14(^{^(})=\frac34(^{^(})$$
 					Therefore, what we want is just $\frac{(^{^(})}{\frac34(^{^(})}=\boxed{\frac43}$.
+				</p>
+			</div>
+			
+			<div class="problem">
+				<p>
+					Compute:
+					$$\dfrac{\displaystyle\sum_{k=1}^{44}\cos k}{\displaystyle\sum_{k=1}^{44}\sin k}$$
+				</p>
+			</div>
+			<button onclick="toggle('solution4')" class="hide-button">Hide/Show Solution</button>
+			<div class="solution" id="solution4">
+				<p>
+					Let $$(^{^(})=\frac{\sum_{k=1}^{44}\cos k}{\sum_{k=1}^{44}\sin k}$$
+					Then
+					$$(^{^(})+1=\frac{\sum_{k=1}^{44}\cos k+\sum_{k=1}^{44}\sin k}{\sum_{k=1}^{44}\sin k}=\frac{\sum_{k=1}^{44}\cos k+\sum_{k=46}^{89}\cos k}{\sum_{k=1}^{44}\sin k}$$
+					Using sum to product:
+					$$\cos\alpha+\cos(90-\alpha)=2\cos\left(\frac{\alpha+(90-\alpha)}{2}\right)\cos\left(\frac{\alpha-(90-\alpha)}{2}\right)=2\left(\frac{\sqrt{2}}{2}\right)\cos(\alpha-45)=\sqrt{2}\cos(\alpha-45)$$
+					Therefore:
+					$$(^{^(})+1=\frac{\sum_{k=1}^{44}\cos k+\sum_{k=46}^{89}\cos k}{\sum_{k=1}^{44}\sin k}=\frac{\sum_{k=46}^{89}(\cos k+\cos(90-k))}{\sum_{k=1}^{44}\sin k}$$
+					$$({^(})+1=\frac{\sum_{k=1}^{44}\sqrt2\cos k}{\sum_{k=1}^{44}\sin k}=\sqrt2(^{^(})$$
+					Therefore: $(^{^(})=\frac{1}{\sqrt2-1}=\boxed{\sqrt2+1}$
+				</p>
+			</div>
+			
+			<div class="problem">
+				<p>
+					If $x$, $y$, and $z$ are complex numbers such that:
+					$$x+\frac1{yz}=5$$
+					$$y+\frac{1}{xz}=8$$
+					$$z+\frac{1}{xy}=6$$
+					Find the sum of all possible values of $xyz$
+				</p>
+			</div>
+			<button onclick="toggle('solution5')" class="hide-button">Hide/Show Solution</button>
+			<div class="solution" id="solution5">
+				<p>
+					For each equation, multiply to get:
+					$$xyz+1=5yz$$
+					$$xyz+1=8xz$$
+					$$xyz+1=6xy$$
+					Let $(^{^(})=xyz$. Multiply all of the equations to get:
+					$$\left((^{^(})+1\right)^3=240(^{^(})^2$$
+					Expanding gives
+					$$(^{^(})^3-237(^{^(})^2+3(^{^(})+1=0$$
+					By vieta's formulas, the answer is just $\boxed{237}$.
 				</p>
 			</div>
 		</div>
