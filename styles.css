@@ -17,7 +17,7 @@ div.header {
 	border-color: aliceblue;
 	border-style: solid;
 	z-index: 100;
-	background-image: url("apple.jpg");
+	background-image: url("apple.png");
 	background-color: #696969;
 }
 
